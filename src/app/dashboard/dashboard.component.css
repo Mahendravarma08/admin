@@ -1,14 +1,4 @@
-.navbar {
-  position: sticky;
-  /* top: 0; */
-  /* background-color: #333; */
-  padding: 12px;
-  color: white;
-}
 
-.navbar .logout-button {
-  float: right;
-}
 
 .curved-box {
   width: 200px;

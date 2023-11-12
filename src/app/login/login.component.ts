@@ -12,6 +12,7 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router) { }
   loginform!: FormGroup;
   spinner: boolean = false;
+  success: boolean = false
   ngOnInit() {
     this.initializeForm();
   }
@@ -28,6 +29,7 @@ export class LoginComponent implements OnInit {
   async signin() {
     this.spinner = true;
 
+
     // console.log(this.loginform.controls['username'].value, this.loginform.controls['password'].value);
     const body = {
       username: this.loginform.controls['username'].value,
@@ -41,10 +43,7 @@ export class LoginComponent implements OnInit {
     //   console.log(response);
     // })
     this.router.navigate(['dashboard'])
-  }
-
-  register() {
-    this.router.navigate(['/signup']);
+    this.success = true
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,7 +8,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     console.log("ngoninit called")
@@ -18,7 +21,10 @@ export class DashboardComponent implements OnInit {
   }
 
   openCard(type: string) {
-    console.log(type, "type")
+    if (type === 'owner') {
+      this.router.navigate(['/owners'])
+
+    }
   }
 
 }
