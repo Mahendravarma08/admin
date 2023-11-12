@@ -25,7 +25,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -63,7 +64,8 @@
               "browserTarget": "admin:build:production"
             },
             "development": {
-              "browserTarget": "admin:build:development"
+              "browserTarget": "admin:build:development",
+              "port": 4202
             }
           },
           "defaultConfiguration": "development"

@@ -1,0 +1,18 @@
+<div class="login-form">
+    <h1>Login</h1>
+    <form [formGroup]="loginform">
+      <div class="content">
+        <div class="input-field">
+          <input type="email" formControlName="username" placeholder="Email" autocomplete="nope">
+        </div>
+        <div class="input-field">
+          <input type="password" formControlName="password" placeholder="Password" autocomplete="new-password">
+        </div>
+        <a href="#" class="link">Forgot Your Password?</a>
+      </div>
+      <div class="action">
+        <button (click)="register()">Register</button>
+        <button (click)="signin()">Sign in</button>
+      </div>
+    </form>
+</div>
