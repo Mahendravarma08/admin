@@ -1,0 +1,49 @@
+.navbar {
+  position: sticky;
+  /* top: 0; */
+  /* background-color: #333; */
+  padding: 12px;
+  color: white;
+}
+
+.navbar .logout-button {
+  float: right;
+}
+
+.curved-box {
+  width: 200px;
+  padding: 5px;
+  background-color: #141313;
+  border-radius: 20px; /* Adjust the radius to control the curve */
+  text-align: center;
+}
+
+.curved-box-sm {
+  width: 100px;
+  padding: 5px;
+  background-color: #0f0f0f;
+  border-radius: 20px; /* Adjust the radius to control the curve */
+  text-align: center;
+}
+
+.click-card {
+    padding: 24px 16px;
+    border-radius: 4px;
+    /* background: #eca8a8; */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.ah-setting-card-icon {
+  height: 56px;
+  width: 56px;
+  border-radius: 8px;
+  margin-inline-end: 12px;
+  text-align: center;
+}
+
+.bg-container {
+  background-color: #b9aaaa; /* Replace with your desired color */
+}

@@ -1,0 +1,50 @@
+<!-- <div class="container">
+    <nav class="navbar sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Sticky top</a>
+        </div>
+    </nav>
+</div> -->
+<nav class="navbar navbar-expand">
+  <div class="navbar-nav ml-auto">
+    <button class="btn btn-primary">Logout</button>
+  </div>
+</nav>
+<div class="container bg-container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="click-card" style="width: 18rem;" (click)="openCard('items')">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">Items</h5>
+          <p class="card-text">Add or edit items.</p>
+          <!-- <a href="#" >ced</a> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="click-card" style="width: 18rem;" (click)="openCard('chefs')">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <!-- <div class="click-card-icon">
+          <img src="../../assets/logos/items logo.jpg" alt="Chefs">
+        </div> -->
+        <div class="card-body">
+          <h5 class="card-title">Chefs</h5>
+          <p class="card-text">Add or edit chefs details.</p>
+          <!-- <a href="#" >ced</a> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="click-card" style="width: 18rem;" (click)="openCard('owner')">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">Owner</h5>
+          <p class="card-text">Add or edit owner details.</p>
+          <!-- <a href="#" >ced</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
